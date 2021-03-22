@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import EpisodeListItem from './EpisodeListItem';
+import CharacterListItem from './CharacterListItem';
 
-import EpisodeListStyles from '../styles/EpisodeList.module.css';
+import CharacterListStyle from '../styles/CharacterList.module.css';
 
 
-class EpisodeList extends Component {
+class CharacterList extends Component {
 	static defaultProps = {
 		checkList: false,
 		baseURL: 'https://www.breakingbadapi.com/api'
@@ -16,7 +16,7 @@ class EpisodeList extends Component {
 		}
 	}
 	componentDidMount() {
-		fetch(`${this.props.baseURL}/episodes`)
+		fetch(`${this.props.baseURL}/characters`)
 		.then(response => response.json())
 		.then(result => {
 			this.setState({data: result})
@@ -27,14 +27,14 @@ class EpisodeList extends Component {
 	};
 	render() {
 		return (
-			<ul className={`${EpisodeListStyles.EpisodeList}`}>
+			<ul className={`${CharacterListStyle.CharacterList}`}>
 				{
-					this.state.data.map(e => <EpisodeListItem check={this.props.checkList} data={e} />)
+					this.state.data.map(e => <CharacterListItem check={this.props.checkList} data={e} />)
 				}
 			</ul>
 		);
 	}
 }
 
-export default EpisodeList;
+export default CharacterList;
 

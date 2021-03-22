@@ -1,23 +1,17 @@
 .ListItem {
 	width: calc(33% - 2rem);
-	transition: all .5s ease;
+	transition: .5s ease;
 	border-radius: 10px;
 	padding: 1rem;
 	margin: 1rem;
 	box-shadow: 0 0 40px 0 rgba(0,0,0,.25);
-	background-color: rgb(85, 130, 71, 1);
-
 }
 
 .ListItem:hover {
-	background-color: rgb(85, 130, 71, .75);
+	background-color: rgb(85, 130, 71, .25);
 	box-shadow: inset 0 0 40px 0 rgba(0,0,0,.25);
+}
 
-}
-.ListItemLink {
-	text-decoration: none;
-	color: black;
-}
 .Info {
 	color: white;
 	background-color: #91AB77;
