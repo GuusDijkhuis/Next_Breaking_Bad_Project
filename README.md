@@ -1,4 +1,4 @@
-# Breaking Bad NextJS Try
+# Breaking Bad NextJS
 ![Image of all the episodes](public/allEpisodes.png)
 
 ## Getting Started
@@ -12,7 +12,7 @@ yarn dev
 ```
 
 ## The Application
-This was my first try to write code with [Next.js](https://nextjs.org/). I wanted a [Next.js](https://nextjs.org/) application with data from an API. For this project I use the Breaking Bad API for the usable data.
+I wanted a [Next.js](https://nextjs.org/) application with data from an API. For this project I use the Breaking Bad API for the usable data.
 
 ### Static pages
 There are 2 static pages, one with an overview of all the characters from *Breaking Bad* and the second one is a page with a list of all the episodes of *Breaking Bad* and *Better call Saul*. In the image below I show the overview of all the characters.
