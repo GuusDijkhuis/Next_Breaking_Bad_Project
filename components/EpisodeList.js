@@ -6,7 +6,6 @@ import EpisodeListStyles from '../styles/EpisodeList.module.css';
 
 class EpisodeList extends Component {
 	static defaultProps = {
-		checkList: false,
 		baseURL: 'https://www.breakingbadapi.com/api'
 	}
 	constructor(props) {

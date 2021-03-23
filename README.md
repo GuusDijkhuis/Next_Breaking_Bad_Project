@@ -1,4 +1,5 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Breaking Bad NextJS Try
+![Image of all the characters]('./public/allCharacters.png "All characters");
 
 ## Getting Started
 
@@ -10,25 +11,12 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## The Application
+This was my first try to write code with [Next.js](https://nextjs.org/). I wanted a [Next.js](https://nextjs.org/) application with data from an API. For this project I use the Breaking Bad API for the usable data.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Static pages
+There are 2 static pages, one with an overview of all the characters from *Breaking Bad* and the second one is a page with a list of all the episodes of *Breaking Bad* and *Better call Saul*. In the image below I show the overview of all the characters.
+![Image of all the episodes]('./public/allEpisodes.png "All episodes");
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Dynamic pages
+All the characters have an dynamic page based on the Breaking Bad API. Every character have their own pages with some extra information. See the image with more information than the character list. The data I use for the dynamic pages are *name*, *img* , *nickname* , *portrayed* and *status*.
